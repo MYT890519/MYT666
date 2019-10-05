@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ch12-02</title>
+  
+       <link rel="stylesheet"href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  
+  
+  
+    <style>
+      h2 {background:wheat;
+          margin:0;
+          padding:10px
+         }  
+      #menu li {float:left;
+                padding-left:0.5em;}
+				
+
+}
+
+				
+    </style>
+</head>
+<body>
+<h2>橫向功能表</h2>
+<ul id="menu">
+  <li>&nbsp;本班介紹&nbsp;
+    <ul>
+      <li>上課需知
+      <li>聯絡我們
+    </ul>
+  </li>
+  <li>網頁設計課程
+    <ul>
+      <li><a href="http://www.w3.org/html/" target="_blank">HTML5</a></li>
+      <li><a href="http://www.w3.org/Style/CSS/" target="_blank">CSS</a></li>
+      <li>--
+      <li>JavaScript
+          <ul>
+          <li>ECMA/JavaScript
+          <li>jQuery
+          </ul>  
+      </li>
+    </ul>  
+  </li>
+  <li>手機程式設計課程
+    <ul>
+    <li>iPhone
+    <li>Android
+    <li>HTML手機程式
+    </ul>
+</ul>
+<script>
+$('#menu').menu({
+icon:{submeun:'ui-icon-triangle-1-s'},
+position:{my:'left top',
+at:'left+10% bottom'}
+});
+
+
+
+
+</script>
+</body>
+</html>
